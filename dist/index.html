@@ -24,7 +24,7 @@
         <main>
             <section>
                 <form class="">
-                    <input id="name" type="text" name="input" value=""placeholder="Name">
+                    <input id="name" type="text" name="input" value="" placeholder="Please enter a url to check tone/subjectivity.....">
                     <input id="submit" type="submit" name="" value="submit">
                 </form>
             </section>
@@ -42,6 +42,14 @@
         <footer>
             <p>This is a footer</p>
         </footer>
-        <script src="../index.js" type="text/javascript"></script>
+        <script src="../index.js" type="text/javascript">
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
     <script type="text/javascript" src="main.js"></script></body>
 </html>

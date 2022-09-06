@@ -30,5 +30,4 @@ function handleSubmit(event) {
     
 }
 
-module.exports = handleSubmit
-// export { handleSubmit }
+export { handleSubmit }
