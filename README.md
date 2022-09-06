@@ -4,7 +4,7 @@
 
 * [Description](#Description)
 * [Installation](#Installation)
-* [Dependencies] (#Dependencies)
+* [Dependencies](#Dependencies)
 
 
 ## Description
